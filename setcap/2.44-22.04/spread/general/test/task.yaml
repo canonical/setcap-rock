@@ -1,0 +1,4 @@
+summary: test the 'setcap' project
+
+execute: |
+  docker run --rm my-rock-name:latest exec setcap -h

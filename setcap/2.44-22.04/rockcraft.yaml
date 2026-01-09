@@ -1,0 +1,15 @@
+name: setcap
+base: bare
+build-base: ubuntu@22.04
+version: '2.44'
+summary: Utility rock for setcap
+description: |
+    A rock that packs libcap2-bin's setcap binary.
+platforms:
+    amd64:
+
+parts:
+    setcap:
+        plugin: nil
+        stage-packages:
+          - libcap2-bin
